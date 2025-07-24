@@ -205,4 +205,38 @@ footer {
 .contato a:hover {
   color: #FFC0CB;
 }
+:\xampp\htdocs\cr_onofre\CSS\styles.css */
+/* ...existing code... */
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #FFD700;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #000 80%, #FFD700 100%);
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .navbar {
+    position: relative;
+  }
+}
